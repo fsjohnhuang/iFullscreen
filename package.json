@@ -1,0 +1,28 @@
+{
+  "name": "ifullscreen",
+  "version": "0.1.0",
+  "description": "An handy Fullscreen API helper library!",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fsjohnhuang/iFullscreen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fsjohnhuang/iFullscreen/issues"
+  },
+  "homepage": "https://github.com/fsjohnhuang/iFullscreen#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "babel-loader": "^8.0.0-beta.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  }
+}
