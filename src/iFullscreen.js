@@ -1,5 +1,5 @@
 /*!
- * @version 0.2.0
+ * @version 0.2.1
  * @author fsjohnhuang
  * @email fsjohnhuang@hotmail.com
  * @ref https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API
@@ -16,7 +16,9 @@ import * as napi from "./napi"
 import * as polyfill from "./polyfill"
 
 /** PROPERTIES  **/
-export const isFullscreen = polyfill.isFullscreen
+export function isFullscreen(){
+  return napi.isFullscreen() || polyfill.isFullscreen()
+}
 export const isFullscreenEnabled = napi.isFullscreenEnabled
 export function getFullscreenElement(){
   let el = napi.getFullscreenElement()

@@ -9,7 +9,7 @@
   <div id="echo" style="width:200px;height:200px;border:solid 1px red;"></div>
   <script>
   let echo = document.querySelector("#echo")
-  iFullscreen.addEventListener("fullscreenchange", _=>{
+  iFullscreen.addEventListener("fullscreenchange", function(){
     echo.textContent += " "+ iFullscreen.isFullscreen()
   })
   </script>
