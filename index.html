@@ -6,5 +6,12 @@
   <script src="./dist/iFullscreen.min.js"></script>
 </head>
 <body>
+  <div id="echo" style="width:200px;height:200px;border:solid 1px red;"></div>
+  <script>
+  let echo = document.querySelector("#echo")
+  iFullscreen.addEventListener("fullscreenchange", _=>{
+    echo.textContent += " "+ iFullscreen.isFullscreen()
+  })
+  </script>
 </body>
 </html>
